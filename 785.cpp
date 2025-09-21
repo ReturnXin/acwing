@@ -5,8 +5,7 @@ using namespace std;
 const int MAXN = 100000 + 10;
 int n, a[MAXN];
 
-void quick_sort(int a[], int l, int r)
-{
+void quick_sort(int a[], int l, int r) {
     if (l >= r)
         return;
     int i = l - 1, j = r + 1, x = a[l + r >> 1];
@@ -24,8 +23,7 @@ void quick_sort(int a[], int l, int r)
     quick_sort(a, j + 1, r);
 }
 
-int main(void)
-{
+int main(void) {
     cin >> n;
     for (int i = 0; i < n; i++) {
         cin >> a[i];
