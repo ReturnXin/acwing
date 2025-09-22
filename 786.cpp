@@ -2,7 +2,7 @@
 using namespace std;
 
 const int MAXN = 100000 + 10;
-int       a[MAXN], n, k;
+int a[MAXN], n, k;
 
 void quick_sort(int a[], int l, int r)
 {
